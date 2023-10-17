@@ -1,0 +1,32 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.homepage-header {
+  background-color: antiquewhite;
+  padding: 2rem;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.home-page-article {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  padding:  2rem 0;
+  border-bottom: 1px dotted gray;
+}
+
+.home-page-article__link {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.home-page-article__date {
+  margin-top: 1rem;
+  font-weight: lighter;
+}
