@@ -1,10 +1,33 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+<div class="container">
+  <section id="single-article"> 
+    <article id="article-content">
+      <div>
+        <h1>{{ .Title }}</h1>
 
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+        <div class="category">
+          <span>Posted in:</span>
+          <span>{{ index .Params.categories 0 | title }}</span>
+        </div>
+
+        <div class="authored-date">
+          {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+          {{ $dateHuman := .Date | time.Format ":date_long" }}
+          <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        </div>
+        
+        <hr>
+        <div>
+          {{ .Content }}
+        </div>
+        
+        <hr>
+        
+        {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+      </div>
+    </article>
+  </section>
+</div>
+
 {{ end }}
