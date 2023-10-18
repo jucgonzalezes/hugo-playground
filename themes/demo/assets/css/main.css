@@ -53,6 +53,7 @@ header {
   font-weight: 700;
 }
 
+
 .header-left a {
   margin: 0;
   font-family: 'Fira Sans', sans-serif;
@@ -60,6 +61,7 @@ header {
   text-decoration: none; /* Remove the underline */
   color: #000; /* Set the link color */
 }
+
 
 .header-right ul {
   list-style: none;
