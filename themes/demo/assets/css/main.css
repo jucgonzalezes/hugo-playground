@@ -30,3 +30,49 @@ body {
   margin-top: 1rem;
   font-weight: lighter;
 }
+
+/* Configs fot the header */
+
+header {
+  width: 1000px;
+  margin: 0 auto;
+  /* background-color: #b42323; Change the background color as needed */
+  color: #000000; /* Change the text color as needed */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+}
+
+.header-left a {
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  text-decoration: none; /* Remove the underline */
+  color: #000; /* Set the link color */
+}
+
+.header-right ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.header-right li {
+  margin-right: 20px;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Fira Sans', sans-serif;
+}

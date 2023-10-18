@@ -1,3 +1,6 @@
+<!-- This header files links the stylesheet of the project, that is, the  -->
+<!-- particular style atributes assigned to the different website elements. -->
+
 <head>
     {{ $styles := resources.Get "css/main.css"}}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">

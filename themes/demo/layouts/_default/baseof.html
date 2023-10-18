@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<!-- The head is not visible -->
 <head>
   {{ partial "head.html" . }}
 </head>
+
+<!-- This document contains the main template of the theme. The <head> element, outside the <body>
+contains the metadata of the website as well as the stylesheets, between others. 
+Inside the body we find the visible elements of the website. Header contains the header or
+navbar of the website, while main defines the content and footer the footer. -->
+
 <body>
   <header>
     {{ partial "header.html" . }}
