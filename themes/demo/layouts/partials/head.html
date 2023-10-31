@@ -4,4 +4,7 @@
 <head>
     {{ $styles := resources.Get "css/main.css"}}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+
+    <!-- {{ $common := resources.Get "css/common/*.css"| resources.Concat "styles.css"}}
+    <link rel="stylesheet" href="{{ $common.RelPermalink }}"> -->
 </head>

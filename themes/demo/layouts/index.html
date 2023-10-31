@@ -6,13 +6,19 @@
     </header> -->
 
     <main>
-        <div class="container">
-            {{ range where .Site.RegularPages "Type" "posts"}}
+        <div class="index-container">
+            <div class="left-column">
+                <img src="{{ .Site.BaseURL }}imgs/photo.jpeg" alt="Photo" width="300"/>
+            </div>
+            <div class="right-column">
+                <p>Some text.</p>
+            </div>
+            <!-- {{ range where .Site.RegularPages "Type" "posts"}}
                 <div class="home-page-article">
                     <a  class="home-page-article__link" href="{{ .Permalink }}">{{ .Title }}</a>
                     <span class="home-page-article__date">{{ .Params.date.Format "January 2, 2006" }}</span>
                 </div>   
-            {{ end }}
+            {{ end }} -->
         </div>
     </main>
 {{ end }}

@@ -1,16 +1,24 @@
 body {
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   margin: 0;
+  padding: 0;
 }
 
-.homepage-header {
-  background-color: antiquewhite;
-  padding: 2rem;
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   width: 1000px;
   margin: 0 auto;
+  background-color: aquamarine;
+  display: flex;
 }
 
 .home-page-article {
@@ -34,27 +42,29 @@ body {
 /* Configs fot the header */
 
 header {
-  width: 1100px;
+  width: 95%;
+  min-width: 200px;
   margin: 0 auto;
   /* background-color: #b42323; Change the background color as needed */
   color: #000000; /* Change the text color as needed */
 }
 
-.header-content {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  height: 100px;
 }
 
-.header-left h1 {
+.menu h1 {
   margin: 0;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 700;
 }
 
 
-.header-left a {
+.menu a {
   margin: 0;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 700;
@@ -63,18 +73,60 @@ header {
 }
 
 
-.header-right ul {
+.ul menu {
   list-style: none;
   padding: 0;
   display: flex;
 }
 
-.header-right li {
+/* .menu {
   margin-right: 20px;
-}
+} */
 
 .header-right a {
   text-decoration: none;
   color: #000000;
   font-family: 'Fira Sans', sans-serif;
+}
+
+/* Index body */
+.index-container {
+  width: 900px;
+  margin: 0 auto;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.left-column {
+  flex: 1;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  margin-right: 25px;
+  margin-left: 50px;
+}
+
+.right-column {
+  flex: 2;
+  padding: 20px;
+  width: 66%;
+  margin-right: 50px;
+  margin-left: 25px;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff; 
+  color: #333; /* Set text color as desired */
+  padding: 10px;
+  text-align: left; /* Center-align the text */
 }
